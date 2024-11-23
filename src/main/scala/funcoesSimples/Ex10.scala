@@ -1,13 +1,14 @@
 package funcoesSimples
 
 object Ex10 {
-    //Faça uma função que recebe dois valores e retorna o menor entre eles.
-    def menor(a: Double, b: Double): Double = if (a < b) a else b
+    def menor(x: Int, y: Int): Int = if(x < y) x else y
     
     def main(args: Array[String]): Unit = {
-        val x = 5
-        val y = 10
-        val z = 3
-        println(s"O menor entre $x, $y, $z é: ${menor(menor(x, y), z)}")
+        val x = 1
+        val y = 13
+        val z = 4
+        val w = 2
+        
+        println(s"O menor entre $x, $y, $z, $w é: ${menor(menor(menor(x, y), z), w)}")
     }
 }
